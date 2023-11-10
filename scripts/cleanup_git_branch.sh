@@ -3,7 +3,7 @@ if [[ -z "$1" ]]; then
    exit 1
 fi
 
-if test "$1" = "dev" -o "$1" = "staging" -o "$1" = "production"
+if test "$1" = "dev" -o "$1" = "staging" -o "$1" = "production" -o "$1" = "main" -o "$1" = "master"
 then
     echo "Attempt to remove protected branch $1"
     exit 1
