@@ -21,7 +21,7 @@ for branch in branches:
   if branch in protected_branches or not branch:
     # Skip protected branches and empty lines
     continue
-  print('Deleting branch? (y/n) {}'.format(branch))
+  print('Delete branch? (y/n) {}'.format(branch))
   choice = input().lower()
   if choice == 'y':
     existed_in_local = os.popen('git branch --list {}'.format(branch)).read().strip()
