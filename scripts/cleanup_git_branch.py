@@ -1,16 +1,7 @@
 import os
+import re
 
-protected_branches = set([
-  'master',
-  'main',
-  'prod',
-  'stag',
-  'dev',
-  'production',
-  'staging',
-  'develop',
-  'release',
-  ])
+pattern = re.compile(r'(release.+)|(master)|(main)|(prod)|(stag)|(dev)|(production)|(staging)|(develop)')
 
 branches = os.popen('git branch').read().split('\n')
 for branch in branches:
@@ -18,7 +9,7 @@ for branch in branches:
     # Skip current branch
     continue
   branch = branch.strip()
-  if branch in protected_branches or not branch:
+  if not branch or pattern.match(branch):
     # Skip protected branches and empty lines
     continue
   print('Delete branch? (y/n) {}'.format(branch))
