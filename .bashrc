@@ -2,3 +2,4 @@ alias cleanup_git_branch='python3 ~/Projects/Toolbox/scripts/cleanup_git_branch.
 alias switch_to_isr_docker='~/Projects/Toolbox/scripts/switch_to_isr_docker.sh'
 alias switch_to_oms_docker='~/Projects/Toolbox/scripts/switch_to_oms_docker.sh'
 alias tag_and_push='~/Projects/Toolbox/scripts/tag_and_push.sh'
+alias delete_tag='~/Projects/Toolbox/scripts/delete_tag.sh'
