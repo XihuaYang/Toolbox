@@ -5,7 +5,7 @@ alias tag_and_push='~/Projects/Toolbox/scripts/tag_and_push.sh'
 alias delete_tag='~/Projects/Toolbox/scripts/delete_tag.sh'
 
 alias cleanup_git_branch='python3 ~/Projects/Toolbox/scripts/cleanup_git_branch.py'
-alias git_current_branch='~/Projects/Toolbox/scripts/git_current_branch.sh'
+alias git_current_branch='export CURRENT_BRANCH=`~/Projects/Toolbox/scripts/git_current_branch.sh`'
 
 alias aws_login='saml2aws login --force'
 
