@@ -9,6 +9,8 @@ alias git_current_branch='export CURRENT_BRANCH=`~/Projects/Toolbox/scripts/git_
 
 alias aws_login='saml2aws login --force'
 
+alias shopify_txn_query='~/Projects/Toolbox/scripts/shopify_txn_query.sh'
+
 ## Terraform aliass
 alias tp-dev='terraform plan -var-file dev.tfvars'
 alias tp-main='terraform plan -var-file main.tfvars'
