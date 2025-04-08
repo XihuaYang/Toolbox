@@ -23,3 +23,6 @@ alias ta-prod='terraform apply -var-file prod.tfvars'
 alias tp='terraform plan -var-file=$(cat .terraform/environment)'.tfvars
 alias ta='terraform apply -var-file=$(cat .terraform/environment)'.tfvars
 
+alias find_missing='python3 ~/Projects/Toolbox/scripts/findMissing.py'
+alias join_quote_ids='python3 ~/Projects/Toolbox/scripts/joinQuoteIds.py'
+
