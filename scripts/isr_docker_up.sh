@@ -1,2 +1,4 @@
-cd ~/Projects/isr-service
+#!/bin/bash
+
+cd ~/Projects/isr-service || exit 1
 ./docker/run.sh all

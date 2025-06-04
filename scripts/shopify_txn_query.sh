@@ -28,6 +28,7 @@ echo "$CURL_COMMAND"
 echo ""
 
 # Prompt for confirmation before executing
+# shellcheck disable=SC2162
 read -p "Do you want to continue with the execution? (y/n): " CONTINUE
 
 if [[ "$CONTINUE" =~ ^[Yy]$ ]]; then
