@@ -1,7 +1,7 @@
 import os
 import re
 
-pattern = re.compile(r'(release.+)|(master)|(main)|(prod)|(stag)|(dev)|(production)|(staging)|(develop)')
+pattern = re.compile(r'(release.+)|(master)|(main)|(prod)|(stag)|(dev)|(production)|(staging)|(develop)|(hotfix)')
 
 branches = os.popen('git branch').read().split('\n')
 for branch in branches:
